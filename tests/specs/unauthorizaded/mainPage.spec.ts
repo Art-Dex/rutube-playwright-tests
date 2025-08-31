@@ -28,3 +28,14 @@ test('Проверка доступности элементов модальн�
   await mainPage.openLoginModal();
   await mainPage.modalLoginOrRegisterHasCorrectAriaSnapshot();
 });
+
+test('Проверка доступности элементов полного меню', async ({ mainPage }) => {
+  await mainPage.openFullMenu();
+  await mainPage.fullMenuHasCorrectAriaSnapshot();
+});
+
+test('Переключение темы', async ({ mainPage }) => {
+  await mainPage.checkThemeAttributeValee('dark2021');
+  await mainPage.changeThemeToWhite();
+  await mainPage.checkThemeAttributeValee('white2022');
+});
