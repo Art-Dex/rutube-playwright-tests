@@ -39,6 +39,7 @@
   - separator
   - region "Моё":
     - button "Моё":
+      - text: Моё
       - img
     - list "Моё":
       - listitem:
@@ -62,6 +63,7 @@
   - separator
   - region "По темам":
     - button "По темам":
+      - text: По темам
       - img
   - separator
   - region "Cкачать приложения":
@@ -69,22 +71,18 @@
     - list "RUTUBE всегда с вами":
       - listitem:
         - link "Установить из Google Play":
-          - /url: https://redirect.appmetrica.yandex.com/serve/822089280250761172?client_id=1756720117527975040&utm_source=rutube.ru&utm_medium=referral&utm_campaign=landing_app
-      - listitem:
+          - /url: https://redirect.appmetrica.yandex.com/serve/822089280250761172
         - link "Ярлык для iOS":
           - /url: https://rutube.ru/info/rutubeapp/
       - listitem:
         - link "Установить из Huawei App Gallery":
-          - /url: https://redirect.appmetrica.yandex.com/serve/389285442492612095?client_id=1756720117527975040&utm_source=rutube.ru&utm_medium=referral&utm_campaign=landing_app
-      - listitem:
+          - /url: https://redirect.appmetrica.yandex.com/serve/389285442492612095
         - link "Установить из RuStore":
-          - /url: https://redirect.appmetrica.yandex.com/serve/533400622968373086?client_id=1756720117527975040&utm_source=rutube.ru&utm_medium=referral&utm_campaign=landing_app
-      - listitem:
+          - /url: https://redirect.appmetrica.yandex.com/serve/533400622968373086
         - link "Установить из RuMarket":
-          - /url: https://redirect.appmetrica.yandex.com/serve/389285425212041727?client_id=1756720117527975040&utm_source=rutube.ru&utm_medium=referral&utm_campaign=landing_app
-      - listitem:
+          - /url: https://redirect.appmetrica.yandex.com/serve/389285425212041727
         - link "Установить из Galaxy Store":
-          - /url: https://redirect.appmetrica.yandex.com/serve/605458194927465783?client_id=1756720117527975040&utm_source=rutube.ru&utm_medium=referral&utm_campaign=landing_app
+          - /url: https://redirect.appmetrica.yandex.com/serve/605458194927465783
   - text: Больше от RUTUBE
   - list "Секция инструкции":
     - listitem:
@@ -147,4 +145,4 @@
       - listitem:
         - link "Фирменный стиль":
           - /url: /brand/
-    - paragraph: /© \d+, RUTUBE/
+    - paragraph: © 2025, RUTUBE
