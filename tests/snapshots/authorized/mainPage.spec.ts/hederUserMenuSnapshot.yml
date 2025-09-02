@@ -1,0 +1,20 @@
+- img "Иконка канала channel69127753"
+- paragraph:
+  - link "channel69127753":
+    - /url: /channel/69127753/
+  - link:
+    - /url: /profile/info/edit/
+    - img
+- paragraph: ci****@yahoo.com
+- list:
+  - listitem:
+    - link "Профиль":
+      - /url: /profile/
+  - listitem:
+    - link "Мой канал":
+      - /url: /channel/69127753/
+  - listitem:
+    - link "Студия RUTUBE":
+      - /url: https://studio.rutube.ru/
+- button "Выйти":
+  - img

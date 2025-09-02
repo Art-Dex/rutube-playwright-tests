@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test';
+import { expect, Locator, Page } from '@playwright/test';
 
 export class BasePage {
   readonly page: Page;
@@ -13,5 +13,11 @@ export class BasePage {
 
   async closeCookiesAlert() {
     await this.cookiesAlertButtonClose.click();
+  }
+
+  protected async checkAriaSnapshot(locator: Locator, ariaName: string) {
+    await expect(locator).toMatchAriaSnapshot({
+      name: ariaName,
+    });
   }
 }
