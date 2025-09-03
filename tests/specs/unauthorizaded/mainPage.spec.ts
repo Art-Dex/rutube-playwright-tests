@@ -39,12 +39,12 @@ test('Проверка доступности элементов модальн�
   await mainPage.modalLoginOrRegisterHasCorrectAriaSnapshot();
 });
 
-// test('Проверка доступности элементов полного меню не авторизованного пользователя', async ({
-//   mainPage,
-// }) => {
-//   await mainPage.openFullMenu();
-//   await mainPage.fullMenuHasCorrectAriaSnapshot();
-// });
+test('Проверка доступности элементов полного меню не авторизованного пользователя', async ({
+  mainPage,
+}) => {
+  await mainPage.openFullMenu();
+  await mainPage.fullMenuHasCorrectAriaSnapshot();
+});
 
 test('Переключение темы не авторизованного пользователя', async ({ mainPage }) => {
   await mainPage.checkThemeAttributeValee('dark2021');

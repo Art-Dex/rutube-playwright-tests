@@ -16,8 +16,6 @@ export class BasePage {
   }
 
   protected async checkAriaSnapshot(locator: Locator, ariaName: string) {
-    await expect(locator).toMatchAriaSnapshot({
-      name: ariaName,
-    });
+    await expect(locator).toMatchAriaSnapshot({ name: ariaName });
   }
 }

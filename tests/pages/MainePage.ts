@@ -97,6 +97,20 @@ export class MainPage extends BasePage {
   }
 
   async fullMenuHasCorrectAriaSnapshot() {
+    await this.page.evaluate(() => {
+      const menuElement = document.querySelector('.menu-content-module__menuOpen');
+      if (menuElement) {
+        const links = menuElement.querySelectorAll('a[href]');
+        links.forEach((link) => {
+          if (link instanceof HTMLAnchorElement) {
+            if (link.href.includes('client_id=')) {
+              link.href = link.href.replace(/client_id=\d+/, 'client_id=static');
+            }
+          }
+        });
+      }
+    });
+
     await this.checkAriaSnapshot(this.openMenuAriaLocator, 'fullMenuSnapshot.yml');
   }
 

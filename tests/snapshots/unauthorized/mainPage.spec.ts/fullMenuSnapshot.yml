@@ -30,6 +30,9 @@
       - link "Спорт":
         - /url: /feeds/sport/
     - listitem:
+      - link /ВЭФ-\d+/:
+        - /url: /forumvostok/
+    - listitem:
       - link "RUTUBE x PREMIER":
         - /url: /feeds/premier/
   - separator
@@ -39,7 +42,6 @@
   - separator
   - region "Моё":
     - button "Моё":
-      - text: Моё
       - img
     - list "Моё":
       - listitem:
@@ -63,7 +65,6 @@
   - separator
   - region "По темам":
     - button "По темам":
-      - text: По темам
       - img
   - separator
   - region "Cкачать приложения":
@@ -71,18 +72,22 @@
     - list "RUTUBE всегда с вами":
       - listitem:
         - link "Установить из Google Play":
-          - /url: https://redirect.appmetrica.yandex.com/serve/822089280250761172
+          - /url: https://redirect.appmetrica.yandex.com/serve/822089280250761172?client_id=static&utm_source=rutube.ru&utm_medium=referral&utm_campaign=landing_app
+      - listitem:
         - link "Ярлык для iOS":
           - /url: https://rutube.ru/info/rutubeapp/
       - listitem:
         - link "Установить из Huawei App Gallery":
-          - /url: https://redirect.appmetrica.yandex.com/serve/389285442492612095
+          - /url: https://redirect.appmetrica.yandex.com/serve/389285442492612095?client_id=static&utm_source=rutube.ru&utm_medium=referral&utm_campaign=landing_app
+      - listitem:
         - link "Установить из RuStore":
-          - /url: https://redirect.appmetrica.yandex.com/serve/533400622968373086
+          - /url: https://redirect.appmetrica.yandex.com/serve/533400622968373086?client_id=static&utm_source=rutube.ru&utm_medium=referral&utm_campaign=landing_app
+      - listitem:
         - link "Установить из RuMarket":
-          - /url: https://redirect.appmetrica.yandex.com/serve/389285425212041727
+          - /url: https://redirect.appmetrica.yandex.com/serve/389285425212041727?client_id=static&utm_source=rutube.ru&utm_medium=referral&utm_campaign=landing_app
+      - listitem:
         - link "Установить из Galaxy Store":
-          - /url: https://redirect.appmetrica.yandex.com/serve/605458194927465783
+          - /url: https://redirect.appmetrica.yandex.com/serve/605458194927465783?client_id=static&utm_source=rutube.ru&utm_medium=referral&utm_campaign=landing_app
   - text: Больше от RUTUBE
   - list "Секция инструкции":
     - listitem:
@@ -145,4 +150,4 @@
       - listitem:
         - link "Фирменный стиль":
           - /url: /brand/
-    - paragraph: © 2025, RUTUBE
+    - paragraph: /© \d+, RUTUBE/
