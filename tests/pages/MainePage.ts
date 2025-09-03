@@ -5,8 +5,6 @@ export class MainPage extends BasePage {
   private readonly headerLocator: Locator;
   private readonly categoriesTabLocator: Locator;
   private readonly menuLocator: Locator;
-  private readonly modalNewRegLocator: Locator;
-  private readonly modalNewRegButtonClosedLocator: Locator;
   private readonly headerAddButton: Locator;
   private readonly headerAddButtonListLocator: Locator;
   private readonly headerNotificationsButton: Locator;
@@ -24,8 +22,6 @@ export class MainPage extends BasePage {
     this.headerLocator = this.page.getByRole('banner');
     this.categoriesTabLocator = this.page.locator('.wdp-tabs-module__tabs>div');
     this.menuLocator = this.page.getByLabel('Облегченная панель навигации');
-    this.modalNewRegLocator = this.page.locator('.wdp-popup-module__header');
-    this.modalNewRegButtonClosedLocator = this.modalNewRegLocator.locator('button');
     this.headerAddButton = this.page.getByRole('button', { name: 'Добавить' });
     this.headerAddButtonListLocator = this.page.locator('.wdp-header-right-module__uploader ul');
     this.headerNotificationsButton = this.page.getByRole('button', { name: 'Уведомления' });
@@ -63,12 +59,6 @@ export class MainPage extends BasePage {
 
   async changeThemeToWhite() {
     await this.changeThemButtonLocator.click();
-  }
-
-  async closedModalNewReg() {
-    if (await this.modalNewRegLocator.isVisible()) {
-      await this.modalNewRegButtonClosedLocator.click();
-    }
   }
 
   async openAddPopupList() {
