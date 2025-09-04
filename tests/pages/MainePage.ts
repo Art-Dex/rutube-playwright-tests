@@ -62,15 +62,15 @@ export class MainPage extends BasePage {
   }
 
   async openAddPopupList() {
-    this.headerAddButton.click();
+    await this.headerAddButton.click();
   }
 
   async openNotificationsPopupList() {
-    this.headerNotificationsButton.click();
+    await this.headerNotificationsButton.click();
   }
 
   async openLoginModal() {
-    this.headerLoginButton.click();
+    await this.headerLoginButton.click();
   }
 
   // assertions
