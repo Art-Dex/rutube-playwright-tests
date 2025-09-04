@@ -1,10 +1,12 @@
 import { test as base } from '@playwright/test';
 import { MainPage } from '../pages/MainePage';
 import { CategoriesPage } from '../pages/CategoriesPage';
+import { SubscriptionsPage } from '../pages/SubscriptionsPage';
 
 type MyFixtures = {
   mainPage: MainPage;
   categoriesPage: CategoriesPage;
+  subscriptionsPage: SubscriptionsPage;
 };
 
 export const test = base.extend<MyFixtures>({
@@ -23,6 +25,14 @@ export const test = base.extend<MyFixtures>({
     await categoriesPage.closedModalAdvertising();
     await categoriesPage.hideHeader();
     await use(categoriesPage);
+  },
+
+  subscriptionsPage: async ({ page }, use) => {
+    const subscriptionsPage = new SubscriptionsPage(page);
+    await subscriptionsPage.open();
+    await subscriptionsPage.closeCookiesAlert();
+    await subscriptionsPage.closedModalAdvertising();
+    await use(subscriptionsPage);
   },
 });
 
