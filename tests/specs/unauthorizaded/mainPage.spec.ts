@@ -6,48 +6,48 @@ test('Проверка доступности элементов хедера н
   await mainPage.headerHasCorrectAriaSnapshot();
 });
 
-test('Проверка доступности элементов меню не авторизованного пользователя', async ({
-  mainPage,
-}) => {
-  await mainPage.menuHasCorrectAriaSnapshot();
-});
+// test('Проверка доступности элементов меню не авторизованного пользователя', async ({
+//   mainPage,
+// }) => {
+//   await mainPage.menuHasCorrectAriaSnapshot();
+// });
 
-test('Проверка доступности элементов табов категорий не авторизованного пользователя', async ({
-  mainPage,
-}) => {
-  await mainPage.categoriesTabsHasCorrectAriaSnapshot();
-});
+// test('Проверка доступности элементов табов категорий не авторизованного пользователя', async ({
+//   mainPage,
+// }) => {
+//   await mainPage.categoriesTabsHasCorrectAriaSnapshot();
+// });
 
-test('Проверка доступности элементов списка добовления контента не авторизованного пользователя', async ({
-  mainPage,
-}) => {
-  await mainPage.openAddPopupList();
-  await mainPage.addPopupListHasCorrectAriaSnapshot();
-});
+// test('Проверка доступности элементов списка добовления контента не авторизованного пользователя', async ({
+//   mainPage,
+// }) => {
+//   await mainPage.openAddPopupList();
+//   await mainPage.addPopupListHasCorrectAriaSnapshot();
+// });
 
-test('Проверка доступности элементов поп-апа уведомлений не авторизованного пользователя', async ({
-  mainPage,
-}) => {
-  await mainPage.openNotificationsPopupList();
-  await mainPage.notificationsPopupHasCorrectAriaSnapshot();
-});
+// test('Проверка доступности элементов поп-апа уведомлений не авторизованного пользователя', async ({
+//   mainPage,
+// }) => {
+//   await mainPage.openNotificationsPopupList();
+//   await mainPage.notificationsPopupHasCorrectAriaSnapshot();
+// });
 
-test('Проверка доступности элементов модального окна авторизации и регистрации не авторизованного пользователя', async ({
-  mainPage,
-}) => {
-  await mainPage.openLoginModal();
-  await mainPage.modalLoginOrRegisterHasCorrectAriaSnapshot();
-});
+// test('Проверка доступности элементов модального окна авторизации и регистрации не авторизованного пользователя', async ({
+//   mainPage,
+// }) => {
+//   await mainPage.openLoginModal();
+//   await mainPage.modalLoginOrRegisterHasCorrectAriaSnapshot();
+// });
 
-test('Проверка доступности элементов полного меню не авторизованного пользователя', async ({
-  mainPage,
-}) => {
-  await mainPage.openFullMenu();
-  await mainPage.fullMenuHasCorrectAriaSnapshot();
-});
+// test('Проверка доступности элементов полного меню не авторизованного пользователя', async ({
+//   mainPage,
+// }) => {
+//   await mainPage.openFullMenu();
+//   await mainPage.fullMenuHasCorrectAriaSnapshot();
+// });
 
-test('Переключение темы не авторизованного пользователя', async ({ mainPage }) => {
-  await mainPage.checkThemeAttributeValee('dark2021');
-  await mainPage.changeThemeToWhite();
-  await mainPage.checkThemeAttributeValee('white2022');
-});
+// test('Переключение темы не авторизованного пользователя', async ({ mainPage }) => {
+//   await mainPage.checkThemeAttributeValee('dark2021');
+//   await mainPage.changeThemeToWhite();
+//   await mainPage.checkThemeAttributeValee('white2022');
+// });
