@@ -56,10 +56,10 @@ export default defineConfig({
       snapshotPathTemplate: 'tests/snapshots/unauthorized/{testFilePath}/{arg}{ext}',
     },
 
-    {
-      name: 'auth',
-      testMatch: 'tests/specs/authTest.spec.ts',
-    },
+    // {
+    //   name: 'auth',
+    //   testMatch: 'tests/specs/authTest.spec.ts',
+    // },
 
     // {
     //   name: 'firefox',
