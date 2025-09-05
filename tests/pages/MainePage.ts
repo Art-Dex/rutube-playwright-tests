@@ -46,11 +46,7 @@ export class MainPage extends BasePage {
 
   //actions
   async open() {
-    await this.page
-      .on('load', (error) => {
-        console.log(error);
-      })
-      .goto('https://rutube.ru', { waitUntil: 'load', timeout: 60000 });
+    await this.page.goto('https://rutube.ru');
   }
 
   async openFullMenu() {
