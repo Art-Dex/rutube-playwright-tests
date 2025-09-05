@@ -24,7 +24,7 @@ export class ForCreatorsPage extends BasePage {
       name: 'Монетизация',
     },
     {
-      url: 'https://rutube.ru/for_creators/##rules',
+      url: 'https://rutube.ru/for_creators/#rules',
       screenshotName: 'rulesTab.png',
       name: 'Правила',
     },

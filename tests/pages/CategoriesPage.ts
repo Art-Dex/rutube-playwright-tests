@@ -9,7 +9,7 @@ export class CategoriesPage extends BasePage {
     this.contentPageLocator = this.page.locator('.application-module__content');
   }
   async open() {
-    await this.page.goto('https://rutube.ru/categories/');
+    await this.page.goto('https://rutube.ru/categories');
   }
 
   async contentPageHasCorrectLayout() {
